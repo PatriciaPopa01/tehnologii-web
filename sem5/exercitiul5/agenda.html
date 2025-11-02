@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        window.onload = () => {
+            let form = document.getElementById("form")
+
+            let formSubmitHandler = (e) =>{
+
+                e.preventDefault()
+
+                let tabel = document.getElementById("table1")
+
+                let numeText = document.getElementById("nume").value
+                let telefonText = document.getElementById("telefon").value
+
+                let randNou = document.createElement("tr")
+                let celulaNume = document.createElement("td")
+                let celulaTelefon = document.createElement("td")
+
+                celulaNume.innerHTML = numeText
+                celulaTelefon.innerHTML = telefonText
+
+                randNou.appendChild(celulaNume)
+                randNou.appendChild(celulaTelefon)
+
+                tabel.appendChild(randNou)
+
+                document.getElementById("nume").value = ""
+                document.getElementById("telefon").value = ""
+
+            }
+
+            form.onsubmit =formSubmitHandler
+
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Agenda telefonica</h1>
+    <table id="table1">
+        <tr>
+            <th>Nume</th>
+            <th>Telefon</th>
+        </tr>
+
+    </table>
+
+    <h2>Adauga contact</h2>
+    <form id="form">
+        <label>Nume:</label>
+        <input type="text" name="nume" id="nume"> <br> <br>
+
+        <label>Numar de telefon:</label>
+        <input type="number" name="telefon" id="telefon"> <br> <br>
+
+        <button type="submit" id="submitButton">Adauga</button> 
+    </form>
+
+</body>
+
+</html>

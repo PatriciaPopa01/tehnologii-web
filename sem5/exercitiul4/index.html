@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = () => {
+            const button = document.getElementById("btn")
+
+            const myEvent = new Event("myEvent")
+
+            const clickEventHandler = () => {
+                alert("butonul a fost apasat!")
+                document.dispatchEvent(myEvent)
+            }
+
+            const customEventHandler = () =>
+            {
+                window.open("https://www.youtube.com/watch?v=0fmSo-OQHTY")
+            }
+
+            button.addEventListener("click", clickEventHandler)
+            document.addEventListener("myEvent",customEventHandler)
+
+
+        }
+    </script>
+</head>
+
+<body>
+    <button id="btn">!!! APASA !!!</button>
+</body>
+
+</html>
