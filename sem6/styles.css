@@ -1,0 +1,43 @@
+.btn:hover{
+    color:red;
+}
+
+input:required{
+    background-color: aliceblue;
+}
+
+input:focus{
+    background-color: bisque;
+}
+
+p::first-line{
+    font-weight: bold;
+}
+
+input:active{
+    border: 1rem solid red;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 2px solid;
+  appearance: none; /* Removes default style */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  border: 3px solid red; /* Your custom border */
+  background-color: blue;
+}
+
+/* tbody tr:first-child{
+    background-color: aqua;
+}
+
+tbody tr:last-child{
+    background-color: black;
+} */
