@@ -19,4 +19,3 @@ if(firstRow && lastRow)
     firstRow.bgColor = "blue"
     lastRow.bgColor ="green"
 }
-

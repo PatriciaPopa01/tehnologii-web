@@ -1,3 +1,5 @@
+/* =====  exercitiul 3  ======*/
+
 .btn:hover{
     color:red;
 }
@@ -14,9 +16,9 @@ p::first-line{
     font-weight: bold;
 }
 
-input:active{
+/* input:active{
     border: 1rem solid red;
-}
+} */
 
 input[type="checkbox"] {
   width: 20px;
@@ -40,4 +42,142 @@ input[type="checkbox"]:checked {
 
 tbody tr:last-child{
     background-color: black;
-} */
+}*/
+    
+
+/* ========= exercitiul 5  ====== */
+.row 
+{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.top_left_square
+{
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid black;
+    
+}
+.top_middle_square{
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid black;
+}
+.top_right_square{
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid black;
+
+    
+}
+
+.middle_left_square{
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid black;
+}
+
+.middle_center_square
+{
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid black;
+}
+
+.middle_right_square
+{
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid black;
+}
+
+.buttom_left_square
+{
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid black;
+}
+
+.buttom_middle_square
+{
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid black;
+}
+
+.buttom_right_square
+{
+    height: 5rem;
+    width: 5rem;
+    border: 2px solid black;
+}
+
+
+/* exercitiul6 */
+#contact-form-h2{
+    text-align: center;
+    margin-top: 7rem;
+    margin-right: 24rem;
+}
+.container-form
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    width: 40%;
+    margin: 0 auto;
+    background-color: #dbdbdb;
+}
+
+.container-form label,input,select,textarea{
+    padding: 10px;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.btnForm{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    width: 5rem;
+    height: 2rem;
+    background-color: #29a820;
+    border-color: #29a820;
+    border-radius: 0.2rem;
+    color:white;
+    border-style: none;
+}
+
+/* ex7 - meniu orizontal*/
+.meniu{
+    display: flex;
+    justify-content:center;
+    background-color: cadetblue;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.meniu li{
+    list-style-type: none;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+.meniu a{
+    color:white;
+}
+
+.meniu li:hover{
+    background-color: #c9c7c7;
+}
+
+.meniu a:active{
+    color:black;
+}
+
+.meniu a:visited{
+    color: white;
+}
